@@ -1,0 +1,7 @@
+<!-- hunter_master_controller.launch -->
+
+<launch>
+    <!-- Specify the package and node to run -->
+    <node pkg="hunter_master_controller" type="hunter_master_controller" name="hunter_master_controller_node" output="screen"/>
+  </launch>
+  

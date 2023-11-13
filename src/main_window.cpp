@@ -146,4 +146,24 @@ void MainWindow::fpsUpdate()
     ui.hunter_stat->setStyleSheet("color: red;");
   }
 }
+
+void MainWindow::on_robit_clicked()
+{
+  ROS_INFO("ROBIT");
+  if (robit)
+  {
+    ui.robit->setIcon(QIcon());
+    ui.robit->setStyleSheet("background-color: transparent;");
+    robit = false;
+    return;
+  }
+  else if (!robit)
+  {
+    QPixmap pixmap(":/images/robit.jpg");
+    QPixmap scaledPixmap = pixmap.scaled(ui.robit->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    ui.robit->setIcon(QIcon(scaledPixmap));
+    robit = true;
+    return;
+  }
+}
 }  // namespace hunter_master_controller

@@ -60,6 +60,7 @@ public Q_SLOTS:
   void updateLidarStatSlot();
   void updateHunterStatSlot();
   void fpsUpdate();
+  void on_robit_clicked();
 
 private:
   Ui::MainWindowDesign ui;
@@ -71,6 +72,7 @@ private:
   rviz::VisualizationFrame* rviz_frame_;
   rviz::VisualizationManager* rviz_manager_;
   rviz::ViewManager* view_manager_;
+  bool robit = true;
 };
 
 }  // namespace hunter_master_controller

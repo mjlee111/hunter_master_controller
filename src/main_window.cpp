@@ -41,6 +41,20 @@ MainWindow::MainWindow(int argc, char** argv, QWidget* parent) : QMainWindow(par
   QObject::connect(&qnode, SIGNAL(updateLaserSignal()), this, SLOT(updateLidarStatSlot()));
   QObject::connect(&qnode, SIGNAL(updateHunterSignal()), this, SLOT(updateHunterStatSlot()));
 
+  QString pathr = QString::fromStdString(qnode.rviz_path);
+  ROS_INFO("Opening RVIZ from path : %s", qnode.rviz_path.c_str());
+
+  rviz_frame_ = new rviz::VisualizationFrame();
+  rviz_frame_->setParent(ui.rvizFrame);
+  rviz_frame_->initialize(pathr);
+  rviz_frame_->setSplashPath("");
+  rviz_frame_->setHideButtonVisibility(false);
+
+  rviz_manager_ = rviz_frame_->getManager();
+  QVBoxLayout* frameLayout = new QVBoxLayout(ui.rvizFrame);
+  frameLayout->addWidget(rviz_frame_);
+  rviz_frame_->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+
   connect(_1s_timer, SIGNAL(timeout()), SLOT(fpsUpdate()));
   _1s_timer->start(1000);
 }
@@ -73,11 +87,13 @@ void MainWindow::on_cam_lidar_btn_clicked()
 void MainWindow::on_nav_btn_clicked()
 {
   ROS_INFO("Now Running Baram Navigation Bringup!");
+  system("roslaunch baram_nav nav.launch &");
 }
 
 void MainWindow::on_aruco_btn_clicked()
 {
   ROS_INFO("Now Running aruco detector Bringup!");
+  system("roslaunch aruco_detector_ocv detector.launch &");
 }
 
 void MainWindow::updateImageSlot()

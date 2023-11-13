@@ -50,6 +50,8 @@ bool QNode::init()
   }
   ros::start();  // explicitly needed since our nodehandle is going out of scope.
   ros::NodeHandle n;
+  rviz_path = ros::package::getPath("teb_local_planner_tutorials");
+  rviz_path = rviz_path + "/cfg/rviz_navigation.rviz";
 
   // Add your ros communications here.
   image_transport::ImageTransport it(n);

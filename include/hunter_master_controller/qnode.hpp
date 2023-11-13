@@ -63,6 +63,8 @@ public:
   cv::Mat* raw_img;
   cv::Mat clone_img;
 
+  std::string rviz_path;
+
 Q_SIGNALS:
   void rosShutdown();
   void updateImageSignal();

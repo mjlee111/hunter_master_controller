@@ -19,6 +19,18 @@
 #include <ros/package.h>
 #include <QTimer>
 
+#include "rviz/visualization_manager.h"
+#include "rviz/render_panel.h"
+#include "rviz/display.h"
+#include "rviz/default_plugin/map_display.h"
+#include "rviz/visualization_manager.h"
+#include "rviz/visualization_frame.h"
+#include "rviz/view_manager.h"
+#include "rviz/config.h"
+#include "rviz/yaml_config_reader.h"
+
+#include <QVBoxLayout>
+
 /*****************************************************************************
 ** Namespace
 *****************************************************************************/
@@ -55,6 +67,10 @@ private:
 
   int img_fps = 0;
   QTimer* _1s_timer;
+
+  rviz::VisualizationFrame* rviz_frame_;
+  rviz::VisualizationManager* rviz_manager_;
+  rviz::ViewManager* view_manager_;
 };
 
 }  // namespace hunter_master_controller

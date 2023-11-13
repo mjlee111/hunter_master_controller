@@ -24,7 +24,7 @@ int main(int argc, char** argv)
   **********************/
   QApplication app(argc, argv);
   hunter_master_controller::MainWindow w(argc, argv);
-  w.setWindowOpacity(0.8);
+  w.setWindowOpacity(0.9);
   w.show();
   app.connect(&app, SIGNAL(lastWindowClosed()), &app, SLOT(quit()));
   int result = app.exec();

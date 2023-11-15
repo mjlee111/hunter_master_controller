@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1200</width>
-    <height>625</height>
+    <width>1371</width>
+    <height>1200</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -34,7 +34,7 @@ color: white;</string>
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>1201</width>
+      <width>1920</width>
       <height>81</height>
      </rect>
     </property>
@@ -58,126 +58,11 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:48pt; font-weight:600; font-style:italic; color:#edd400;&quot;&gt;Hunter Master Controller&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QTabWidget" name="tabWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>90</y>
-      <width>661</width>
-      <height>521</height>
-     </rect>
-    </property>
-    <property name="currentIndex">
-     <number>0</number>
-    </property>
-    <widget class="QWidget" name="tab">
-     <attribute name="title">
-      <string>CAM</string>
-     </attribute>
-     <widget class="QLabel" name="cam_img">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>0</y>
-        <width>640</width>
-        <height>480</height>
-       </rect>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::Box</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_3">
-      <property name="geometry">
-       <rect>
-        <x>9</x>
-        <y>0</y>
-        <width>641</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::Box</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <property name="text">
-       <string>MAIN CAMERA</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_4">
-      <property name="geometry">
-       <rect>
-        <x>11</x>
-        <y>459</y>
-        <width>69</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::Box</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <property name="text">
-       <string>fps</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="fps">
-      <property name="geometry">
-       <rect>
-        <x>79</x>
-        <y>459</y>
-        <width>69</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::Box</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_2">
-     <attribute name="title">
-      <string>LIDAR</string>
-     </attribute>
-     <widget class="QFrame" name="rvizFrame">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>640</width>
-        <height>480</height>
-       </rect>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-     </widget>
-    </widget>
-   </widget>
    <widget class="QPushButton" name="hunter_btn">
     <property name="geometry">
      <rect>
-      <x>710</x>
-      <y>130</y>
+      <x>870</x>
+      <y>610</y>
       <width>451</width>
       <height>28</height>
      </rect>
@@ -189,8 +74,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QPushButton" name="cam_lidar_btn">
     <property name="geometry">
      <rect>
-      <x>710</x>
-      <y>220</y>
+      <x>870</x>
+      <y>700</y>
       <width>451</width>
       <height>28</height>
      </rect>
@@ -202,8 +87,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QPushButton" name="nav_btn">
     <property name="geometry">
      <rect>
-      <x>710</x>
-      <y>300</y>
+      <x>870</x>
+      <y>780</y>
       <width>451</width>
       <height>28</height>
      </rect>
@@ -215,8 +100,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QPushButton" name="aruco_btn">
     <property name="geometry">
      <rect>
-      <x>710</x>
-      <y>340</y>
+      <x>870</x>
+      <y>820</y>
       <width>451</width>
       <height>28</height>
      </rect>
@@ -228,8 +113,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>710</x>
-      <y>260</y>
+      <x>870</x>
+      <y>740</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -247,8 +132,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>920</x>
-      <y>260</y>
+      <x>1080</x>
+      <y>740</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -266,8 +151,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="cam_stat">
     <property name="geometry">
      <rect>
-      <x>800</x>
-      <y>260</y>
+      <x>960</x>
+      <y>740</y>
       <width>111</width>
       <height>21</height>
      </rect>
@@ -285,8 +170,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="lidar_stat">
     <property name="geometry">
      <rect>
-      <x>1030</x>
-      <y>260</y>
+      <x>1190</x>
+      <y>740</y>
       <width>131</width>
       <height>21</height>
      </rect>
@@ -304,8 +189,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>710</x>
-      <y>170</y>
+      <x>870</x>
+      <y>650</y>
       <width>111</width>
       <height>21</height>
      </rect>
@@ -323,8 +208,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="hunter_stat">
     <property name="geometry">
      <rect>
-      <x>830</x>
-      <y>170</y>
+      <x>990</x>
+      <y>650</y>
       <width>111</width>
       <height>21</height>
      </rect>
@@ -342,8 +227,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>1020</x>
-      <y>400</y>
+      <x>1180</x>
+      <y>880</y>
       <width>151</width>
       <height>161</height>
      </rect>
@@ -361,8 +246,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>1020</x>
-      <y>580</y>
+      <x>1180</x>
+      <y>1060</y>
       <width>161</width>
       <height>31</height>
      </rect>
@@ -386,8 +271,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QPushButton" name="robit">
     <property name="geometry">
      <rect>
-      <x>860</x>
-      <y>390</y>
+      <x>1020</x>
+      <y>870</y>
       <width>150</width>
       <height>150</height>
      </rect>
@@ -406,6 +291,176 @@ p, li { white-space: pre-wrap; }
      </size>
     </property>
    </widget>
+   <widget class="QLabel" name="aruco_img">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>120</y>
+      <width>640</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>679</x>
+      <y>120</y>
+      <width>641</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="text">
+     <string>ARUCO</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="rvizFrame">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>620</y>
+      <width>640</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>641</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="text">
+      <string>SLAM &amp; NAVIGATION</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="fps">
+    <property name="geometry">
+     <rect>
+      <x>89</x>
+      <y>579</y>
+      <width>69</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>21</x>
+      <y>579</y>
+      <width>69</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="text">
+     <string>fps</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>120</y>
+      <width>641</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="text">
+     <string>MAIN CAMERA</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cam_img">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>640</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>cam_img</zorder>
+   <zorder>textEdit</zorder>
+   <zorder>hunter_btn</zorder>
+   <zorder>cam_lidar_btn</zorder>
+   <zorder>nav_btn</zorder>
+   <zorder>aruco_btn</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>cam_stat</zorder>
+   <zorder>lidar_stat</zorder>
+   <zorder>label_5</zorder>
+   <zorder>hunter_stat</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>robit</zorder>
+   <zorder>aruco_img</zorder>
+   <zorder>label_8</zorder>
+   <zorder>rvizFrame</zorder>
+   <zorder>fps</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_3</zorder>
   </widget>
   <action name="action_Quit">
    <property name="text">

@@ -56,6 +56,8 @@ bool QNode::init()
   // Add your ros communications here.
   image_transport::ImageTransport it(n);
   img_subscriber = it.subscribe("/camera/image", 1, &QNode::imgCallback, this);
+  acuro_subscriber = it.subscribe("/result_img", 1, &QNode::acuroImgCallback, this);
+
   laser_subscriber = n.subscribe("/scan", 1, &QNode::laserCallback, this);
   hunter_subscriber = n.subscribe("/hunter_status", 1, &QNode::hunterCallback, this);
 
@@ -84,6 +86,18 @@ void QNode::imgCallback(const sensor_msgs::ImageConstPtr& img_raw)
     clone_img = raw_img->clone();
     cv::resize(clone_img, clone_img, cv::Size(RESIZE_H, RESIZE_W), 0, 0, CV_INTER_LINEAR);
     Q_EMIT updateImageSignal();
+  }
+}
+
+void QNode::acuroImgCallback(const sensor_msgs::ImageConstPtr& img_raw)
+{
+  if (!imgIsRcvd)
+  {
+    acuroImgIsRcvd = true;
+    acuro_raw_img = new cv::Mat(cv_bridge::toCvCopy(img_raw, sensor_msgs::image_encodings::BGR8)->image);
+    acuro_img = raw_img->clone();
+    cv::resize(acuro_img, acuro_img, cv::Size(RESIZE_H, RESIZE_W), 0, 0, CV_INTER_LINEAR);
+    Q_EMIT updateAcuroImageSignal();
   }
 }
 

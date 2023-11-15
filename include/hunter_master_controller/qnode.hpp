@@ -58,16 +58,20 @@ public:
   void run();
 
   bool imgIsRcvd = false;
+  bool acuroImgIsRcvd = false;
   bool laserIsRcvd = false;
   bool hunterIsRcvd = false;
   cv::Mat* raw_img;
   cv::Mat clone_img;
+  cv::Mat* acuro_raw_img;
+  cv::Mat acuro_img;
 
   std::string rviz_path;
 
 Q_SIGNALS:
   void rosShutdown();
   void updateImageSignal();
+  void updateAcuroImageSignal();
   void updateLaserSignal();
   void updateHunterSignal();
 
@@ -77,6 +81,9 @@ private:
 
   image_transport::Subscriber img_subscriber;
   void imgCallback(const sensor_msgs::ImageConstPtr& img_raw);
+
+  image_transport::Subscriber acuro_subscriber;
+  void acuroImgCallback(const sensor_msgs::ImageConstPtr& img_raw);
 
   ros::Subscriber laser_subscriber;
   void laserCallback(const sensor_msgs::LaserScanConstPtr& msg);

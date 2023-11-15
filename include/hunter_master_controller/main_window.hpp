@@ -57,6 +57,7 @@ public Q_SLOTS:
   void on_nav_btn_clicked();
   void on_aruco_btn_clicked();
   void updateImageSlot();
+  void updateAcuroImageSlot();
   void updateLidarStatSlot();
   void updateHunterStatSlot();
   void fpsUpdate();

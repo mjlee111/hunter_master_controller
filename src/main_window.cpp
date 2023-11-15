@@ -38,6 +38,7 @@ MainWindow::MainWindow(int argc, char** argv, QWidget* parent) : QMainWindow(par
 
   QObject::connect(&qnode, SIGNAL(rosShutdown()), this, SLOT(close()));
   QObject::connect(&qnode, SIGNAL(updateImageSignal()), this, SLOT(updateImageSlot()));
+  QObject::connect(&qnode, SIGNAL(updateAcuroImageSignal()), this, SLOT(updateAcuroImageSlot()));
   QObject::connect(&qnode, SIGNAL(updateLaserSignal()), this, SLOT(updateLidarStatSlot()));
   QObject::connect(&qnode, SIGNAL(updateHunterSignal()), this, SLOT(updateHunterStatSlot()));
 
@@ -110,6 +111,19 @@ void MainWindow::updateImageSlot()
     qnode.raw_img = NULL;
   }
   img_fps++;
+}
+
+void MainWindow::updateAcuroImageSlot()
+{
+  QImage qraw_img((const unsigned char*)(qnode.acuro_img.data), qnode.acuro_img.cols, qnode.acuro_img.rows,
+                  QImage::Format_RGB888);
+  ui.aruco_img->setPixmap(QPixmap::fromImage(qraw_img.rgbSwapped()));
+  delete qnode.acuro_raw_img;
+  qnode.imgIsRcvd = false;
+  if (!qnode.raw_img->empty())
+  {
+    qnode.raw_img = NULL;
+  }
 }
 
 void MainWindow::updateLidarStatSlot()

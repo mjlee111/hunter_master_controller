@@ -56,6 +56,17 @@ MainWindow::MainWindow(int argc, char** argv, QWidget* parent) : QMainWindow(par
   frameLayout->addWidget(rviz_frame_);
   rviz_frame_->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
+  rviz_frame_2 = new rviz::VisualizationFrame();
+  rviz_frame_2->setParent(ui.rvizFrame_2);
+  rviz_frame_2->initialize(pathr);
+  rviz_frame_2->setSplashPath("");
+  rviz_frame_2->setHideButtonVisibility(false);
+
+  rviz_manager_2 = rviz_frame_2->getManager();
+  QVBoxLayout* frameLayout2 = new QVBoxLayout(ui.rvizFrame_2);
+  frameLayout2->addWidget(rviz_frame_2);
+  rviz_frame_2->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+
   connect(_1s_timer, SIGNAL(timeout()), SLOT(fpsUpdate()));
   _1s_timer->start(1000);
 }
@@ -180,4 +191,29 @@ void MainWindow::on_robit_clicked()
     return;
   }
 }
+
+void MainWindow::on_darkmode_checkbox_clicked()
+{
+  if (ui.darkmode_checkbox->isChecked())
+  {
+    QString styleSheet =
+        "QMainWindow {"
+        "    background-color: rgb(60, 58, 57);"
+        "    font: 11pt;"
+        "    color: white;"
+        "}";
+    this->setStyleSheet(styleSheet);
+  }
+  else if (!ui.darkmode_checkbox->isChecked())
+  {
+    QString styleSheet =
+        "QMainWindow {"
+        "    background-color: rgb(255, 255, 255);"
+        "    font: 11pt;"
+        "    color: white;"
+        "}";
+    this->setStyleSheet(styleSheet);
+  }
+}
+
 }  // namespace hunter_master_controller

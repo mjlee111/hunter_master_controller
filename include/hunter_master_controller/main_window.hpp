@@ -62,6 +62,7 @@ public Q_SLOTS:
   void updateHunterStatSlot();
   void fpsUpdate();
   void on_robit_clicked();
+  void on_darkmode_checkbox_clicked();
 
 private:
   Ui::MainWindowDesign ui;
@@ -73,6 +74,10 @@ private:
   rviz::VisualizationFrame* rviz_frame_;
   rviz::VisualizationManager* rviz_manager_;
   rviz::ViewManager* view_manager_;
+
+  rviz::VisualizationFrame* rviz_frame_2;
+  rviz::VisualizationManager* rviz_manager_2;
+  rviz::ViewManager* view_manager_2;
   bool robit = true;
 };
 

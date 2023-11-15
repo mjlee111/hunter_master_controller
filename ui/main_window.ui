@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1371</width>
+    <width>1922</width>
     <height>1200</height>
    </rect>
   </property>
@@ -61,8 +61,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QPushButton" name="hunter_btn">
     <property name="geometry">
      <rect>
-      <x>870</x>
-      <y>610</y>
+      <x>1460</x>
+      <y>100</y>
       <width>451</width>
       <height>28</height>
      </rect>
@@ -74,8 +74,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QPushButton" name="cam_lidar_btn">
     <property name="geometry">
      <rect>
-      <x>870</x>
-      <y>700</y>
+      <x>1460</x>
+      <y>190</y>
       <width>451</width>
       <height>28</height>
      </rect>
@@ -87,8 +87,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QPushButton" name="nav_btn">
     <property name="geometry">
      <rect>
-      <x>870</x>
-      <y>780</y>
+      <x>1460</x>
+      <y>270</y>
       <width>451</width>
       <height>28</height>
      </rect>
@@ -100,8 +100,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QPushButton" name="aruco_btn">
     <property name="geometry">
      <rect>
-      <x>870</x>
-      <y>820</y>
+      <x>1460</x>
+      <y>310</y>
       <width>451</width>
       <height>28</height>
      </rect>
@@ -113,8 +113,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>870</x>
-      <y>740</y>
+      <x>1460</x>
+      <y>230</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -132,8 +132,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>1080</x>
-      <y>740</y>
+      <x>1670</x>
+      <y>230</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -151,8 +151,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="cam_stat">
     <property name="geometry">
      <rect>
-      <x>960</x>
-      <y>740</y>
+      <x>1550</x>
+      <y>230</y>
       <width>111</width>
       <height>21</height>
      </rect>
@@ -170,8 +170,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="lidar_stat">
     <property name="geometry">
      <rect>
-      <x>1190</x>
-      <y>740</y>
+      <x>1780</x>
+      <y>230</y>
       <width>131</width>
       <height>21</height>
      </rect>
@@ -189,8 +189,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>870</x>
-      <y>650</y>
+      <x>1460</x>
+      <y>140</y>
       <width>111</width>
       <height>21</height>
      </rect>
@@ -208,8 +208,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="hunter_stat">
     <property name="geometry">
      <rect>
-      <x>990</x>
-      <y>650</y>
+      <x>1580</x>
+      <y>140</y>
       <width>111</width>
       <height>21</height>
      </rect>
@@ -227,8 +227,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>1180</x>
-      <y>880</y>
+      <x>1770</x>
+      <y>370</y>
       <width>151</width>
       <height>161</height>
      </rect>
@@ -246,8 +246,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>1180</x>
-      <y>1060</y>
+      <x>1770</x>
+      <y>550</y>
       <width>161</width>
       <height>31</height>
      </rect>
@@ -271,8 +271,8 @@ p, li { white-space: pre-wrap; }
    <widget class="QPushButton" name="robit">
     <property name="geometry">
      <rect>
-      <x>1020</x>
-      <y>870</y>
+      <x>1610</x>
+      <y>360</y>
       <width>150</width>
       <height>150</height>
      </rect>
@@ -333,7 +333,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>620</y>
+      <y>640</y>
       <width>640</width>
       <height>480</height>
      </rect>
@@ -344,25 +344,6 @@ p, li { white-space: pre-wrap; }
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLabel" name="label_9">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>641</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-     <property name="text">
-      <string>SLAM &amp; NAVIGATION</string>
-     </property>
-    </widget>
    </widget>
    <widget class="QLabel" name="fps">
     <property name="geometry">
@@ -440,6 +421,76 @@ p, li { white-space: pre-wrap; }
      <string/>
     </property>
    </widget>
+   <widget class="QFrame" name="rvizFrame_2">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>640</y>
+      <width>640</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>620</y>
+      <width>641</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="text">
+     <string>SLAM &amp; NAVIGATION</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>620</y>
+      <width>641</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="text">
+     <string>SLAM &amp; NAVIGATION</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="darkmode_checkbox">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>50</y>
+      <width>93</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DarkMode</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
    <zorder>cam_img</zorder>
    <zorder>textEdit</zorder>
    <zorder>hunter_btn</zorder>
@@ -461,6 +512,10 @@ p, li { white-space: pre-wrap; }
    <zorder>fps</zorder>
    <zorder>label_4</zorder>
    <zorder>label_3</zorder>
+   <zorder>rvizFrame_2</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_10</zorder>
+   <zorder>darkmode_checkbox</zorder>
   </widget>
   <action name="action_Quit">
    <property name="text">

@@ -210,7 +210,7 @@ void MainWindow::on_darkmode_checkbox_clicked()
         "QMainWindow {"
         "    background-color: rgb(255, 255, 255);"
         "    font: 11pt;"
-        "    color: white;"
+        "    color: black;"
         "}";
     this->setStyleSheet(styleSheet);
   }
